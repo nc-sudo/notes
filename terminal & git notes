@@ -1,0 +1,30 @@
+code = opens file in VSCode
+nano = opens file in Nano text editor
+rm = removes file
+rm -r = removes directories
+rm -i = prompts confirmation before removal
+rm -d = removes empty directories
+
+ctrl+alt+T = opens terminal
+
+github public email: 287546529+ragez-sudo@users.noreply.github.com
+
+use mv (move) to rename
+can specificy mv [file name] [new location OR new name]
+
+open = opens file in default program
+cat = opens entire text file into terminal (best for small files)
+less = opens in interactive, scrollable window *return to terminal with "q"
+
+***can quit out of any scrollable window in terminal with "q"
+
+ctrl+/ = comment line shortcut for VSCode
+
+target="_blank" opens hyperlink in new tab, rather than the default current tab
+
+code . = opens the current directory in new window of VSCode Explorer
+	using the -r modifier resuses the current window
+
+git clone [url] = allows to clone a github repository onto local machine or codespace
+
+git remote -v --> prints the repository the local git project is connected to

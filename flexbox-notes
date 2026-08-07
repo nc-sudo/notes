@@ -1,0 +1,43 @@
+justify --> positions along the primary axis
+align --> position along the cross asix
+content --> a group that can be distributed
+items --> single items that can be positioned individually
+
+justify-content --> control distribution of the group along the primary axis
+align-items --> position each item indiviually along the cross axis
+algin-content --> position group of items along cross axis
+(align-content used with flex-wrap mentioned below)
+
+align-self --> command to align the element the style code is contained within
+***there is no "justify-self" since only a group can move along the primary axis
+
+
+flex-direction --> row or column, defaults to row
+
+flex-basis --> sets size across primary axis (think width for row and height for column)
+
+flex-grow --> sets behavior to fill empty space (if multiple children set flex-grow: 1; then the extra space is divided proportionally between them based on their flex-grow value)
+^^^how empty space is distributed when items are smaller than container
+
+flex-basis sets 'hypothetical size' of an element, and when the items shrink they will do so proportionally
+
+flex-shrink --> sets how shrinking behavior is split between elements by a ratio, when you don't want them to shrink proportionally
+^^^how space is removed from items when they are bigger than container
+If you don't want something to shrink, you can set that with flex-shrink: 0;
+
+flex-shrink won't shrink an element(item) below it's defaul min-width value.
+	ex. a text input box on a website
+This means if the container shrink enough the item will just overflow outside the container. This can be fixed by explicitly setting the min-width of an item to 0px, to force allow flex-shrink to shrink it.
+(same thing can be done with min-height when using flexbox columns)
+
+gap --> set amount of space in-between each child
+
+auto-margins --> distribute the empty space to the elements margin
+	so if margin-left: auto; --> the extra space on the page will be applied to the left margin of the item
+	if multiple margins are set to auto on the same axis it will split the space between them
+
+
+flex-wrap --> wraps the items onto the next row when the container shrinks, doesn't shrink items until they all exist in their own row
+
+
+

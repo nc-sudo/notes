@@ -1,0 +1,16 @@
+{
+    "editor.inlineSuggest.enabled": false,
+    "workbench.editor.empty.hint": "hidden",
+    "editor.wordWrap": "on",
+    "security.workspace.trust.untrustedFiles": "open",
+    "terminal.integrated.initialHint": false
+
+    "[git-commit]": {
+        "editor.rulers": [
+            50,
+            72
+        ],
+        "editor.wordWrap": "on",
+        "workbench.editor.restoreViewState": false
+    }
+}

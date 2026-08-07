@@ -1,0 +1,47 @@
+https://javascript.info/variables
+
+let --> declares a variable
+*** cannot use "let" more than once per variable, if needing to change value of variable simply declare it's value without the "let" command
+
+ex. let message = "hello";
+	message = "hello world!";
+
+there exists a practice of using "const" to create aliases for other values that are difficult to remember or refer too.
+
+ex. const COLOR_RED = "#F00";
+
+it's a lot easier to apply COLOR_RED than it is to remember the hexadecimal value for the color red. All caps names for constants is, in best practice, only used for aliases of "hard-coded" values.
+*** hard-coded refers to values that are known prior to any code being executed. so it would be reasonable to use:
+	const BIRTHDAY = '07.01.1995'
+
+++ before a variable returns the new value while putting it after returns the old value
+ex. let a = 2;
+	++a returns 3		a++ returns 2, then increases the value
+this is useful because we might want to use the new value or old value after the increment, so choosing the correct one enables that
+
+
+MATH
+when doing "string" + 1, it turns 1 into a string
+ex " " + 1 + 0 = "10"
+subtraction always coverts to numbers
+ex " " - 1 + 0 = -1
+
+null becomes 0 when converted to number
+undefined becomes NaN when converted
+
+
+can use Number() to force it to convert to number, and String() to force to convert to string.
+
+can use "node" command to run and edit javascript code from the terminal
+use ".exit" to return to terminal
+
+
+' and " do the same thing, declaring the string
+` is used to allow embedding of variables using &{variable name}, and also allows for line breaks to be embedded into a string.
+***can also add line breaks using \n within ' or " strings
+
+To actually include ', `, or " as part of a string, you can:
+ - Define the string using one of the other characters to define the string
+ - Escape the problem using \ before the character
+ex. 'I\'ve got not right to...'
+ex2. 'She said, "Don\'t touch me!"'

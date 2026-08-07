@@ -1,0 +1,12 @@
+passphrase = password to login to virtual machine
++--[ED25519 256]--+
+|*oo.    .+o+     |
+|=.o..   +o* .    |
+| B . . o o + .   |
+|  *   o + *.=    |
+| E .   BS*+= o   |
+|o     o O+o.  .  |
+|.    . o oo      |
+|          ..     |
+|          ..     |
++----[SHA256]-----+
