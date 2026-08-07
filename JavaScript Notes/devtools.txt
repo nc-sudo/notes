@@ -1,0 +1,40 @@
+Device Mode
+    - Simulate mobile devices
+    - Emulate device sensors
+
+Elements Panel
+    - View and change DOM (html elements)
+    - View and change CSS
+    - Identify CSS improvements
+    - Emulate light/dark themes, contrast, other CSS features
+    - Inspect animations
+
+Console Panel
+    - View messages and run JavaScript
+
+Sources Panel
+    - Debug JavaScript
+    - Make persistant changes across page reloads
+    - Use breakpoints to run snippets of JavaScript
+    - Edit and save giles into local workspace
+
+Network Panel
+    - View and debug network activity
+
+Recorder Panel
+    - Record, replay, and user flows (the steps taken to complete an action)
+
+Performance Panel
+    - Find ways to improve load and runtime Performance
+
+Memory Panel
+    - Find and fix memory issues that affect performance, like memory leaks
+
+Application Panel
+    - Inspect all loaded resources (DBs, cookies, cache, images, fonts, stylesheets, etc.)
+
+Security Panel
+    - Debug mixed content issues, certificate problems, etc.
+
+
+
