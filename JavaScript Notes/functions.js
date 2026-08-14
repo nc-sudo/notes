@@ -1,3 +1,5 @@
+/* source: https://javascript.info/function-basics */ 
+
 // A function has: function, function argument, parameter
 
 /* parameter and function argument both exist within ()
@@ -75,6 +77,7 @@ showMessage('Ann', "What's up?"); // Ann: What's up?
 showMessage('Ann'); // Ann: undefined
 
 
+
 /* Can set default value for parameter if arguement isn't provided */
 // parameter = defaultvalue
 function showMessage(from,text = "no text") {
@@ -82,6 +85,8 @@ function showMessage(from,text = "no text") {
 }
 showMessage('Ann'); // Ann: no text
 // default value will also trigger if argument === undefined
+
+
 
 /* can also pass another function as a default value to be used*/
 function missingText(){
@@ -94,5 +99,72 @@ function showMessage(from, text = missingText()) {
 
 showMessage('Me'); // Me You forgot to assign value to text variable!
 
+
+
+/* can also assign default value within the function body */
+function showMessage(text) {
+    if (text === undefined) { // if the parameter stricly equals undefined
+        text = 'empty message';
+    }
+    alert(text);
+}
+showMessage(); // alerts empty message
+
+// or...
+
+function showMessage(text) {
+    text = text || 'empty'; 
+// since || seeks a truthy expression, a string is inherently truthy and undefined is not
+}
+
+
+/*  functions can return values back into the calling code as a result 
+    wherever the execution reaches a return, the function stops
+and the value is returned to the calling code */
+function sum(a, b) {
+    return a + b; 
+}
+
+let result = sum(1,2);
+// result = function sum with parameters 1 & 2
+alert(result); // 3
+
+/* there doesn't need to be a variable that the value gets returned from, it just returns to whatever code called the function */
+
+// example of a function that has multiple occurances of return
+function checkAge(age) {
+    if (age >= 18) {
+        return true;
+    } else {
+        return confirm('Do you have permission?');
+    }
+}
+
+let age = prompt('How old are you?', 18); 
+// the 2nd parameter auto populated the prompt field
+
+if (checkAge(age)) { // if checks for true/truthy
+    alert('Access granted');
+} else {
+    alert('Access denied');
+}
+
+
+/* using return without a value will cause the function to cease immediately */
+// empty return is the same as return undefined
+function showMovie(age) {
+    if (!checkAge(age)) {
+        return;
+    }
+    alert("Enjoy the show!");
+}
+
+// spent forever trying to figure out why the "enjoy show" alert wouldn't initiate, but was never actually calling the function
+showMovie(age);
+// when trying to run the entire fucntion it initiates the confirm code two times because I am not storing the checkAge value but calling it two different times. To prevent this I would save the value of checkAge in a variable, and evaluate the variable in the showMovie function
+
+/* functions are actions, so names should be a verb and describe what the function does. Best practice is to reserve one action to one function, and to create a new function for each seperate action, and a function that runs all functions rather than combined all their code. */
+
+// it is also helpful to think of function names also as comments, and use them in a way that helps make the code more readable and structured even if there is no intention to reuse them
 
 
